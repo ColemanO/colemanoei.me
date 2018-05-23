@@ -1,0 +1,179 @@
+/*-----Global-----*/
+* {
+    margin: 0;
+    padding: 0;
+    border:0;
+    outline:0;
+    /*text-transform: lowercase;*/
+    vertical-align:baseline;
+}
+
+html{
+    font-family: circe-rounded, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body{
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav.a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+}
+
+h1{
+    color: #2D9CDB;
+    font-size: 46px;
+}
+
+h2{
+    color: #F2C94C;
+    font-size: 32px;
+}
+
+h3{
+    color: #EB5757;
+    font-size: 24px;
+}
+
+p{
+    color: #4F4F4F;
+    font-size: 18px;
+}
+
+/*-----nav-----*/
+
+nav {
+    height: 100px;
+    line-height: 100px;
+}
+
+nav a{
+    color: #2D9CDB;
+    text-decoration: none;
+    margin: 16px;
+    border-bottom: 10px solid transparent;
+}
+
+nav a:hover{
+    color: #EB5757;
+    border-bottom: 3px solid #F2C94C;
+}
+
+nav a.active{
+    color: #EB5757;
+    border-bottom: 3px solid #F2C94C;
+}
+
+/*-----header-----*/
+
+header {
+    margin: 100px 0 200 0;
+    text-align: center
+}
+
+header p{
+    width: 45%;
+    margin: 30px auto 0px auto;
+}
+
+header img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
+}
+
+.image_cropper{
+    margin: 20px auto 50px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 500px;
+    overflow: hidden;
+}
+
+.circle:before {
+    content: ' \25CF';
+    font-size: 375px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-40%);
+    top: 10px;
+    z-index: -1;
+    color: #2D9CDB
+}
+
+.circle2:before {
+    content: ' \25CF';
+    font-size: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-60%);
+    top: -115px;
+    z-index: -1;
+    color: #F2C94C
+}
+
+.circle3:before {
+    content: ' \25CF';
+    font-size: 450px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-42%);
+    top: -100px;
+    z-index: -1;
+    color: #EB5757
+}
+
+/*-----work-----*/
+
+.work{
+    text-align: center;
+    
+}
+.work h2{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.work img{
+    width: 90%;
+    height: auto;
+}
+
+/*-----footer-----*/
+footer{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*-----responsive-----*/
+
+@media only screen and (max-width: 991px){
+    header p{
+        width: 100%;
+    }
+    footer{
+        text-align: left
+    }
+    
+    nav a{
+        text-decoration: none;
+        margin: 30px;
+        border-bottom: 10px solid transparent;
+        font-size: 20px;
+    }
+}
